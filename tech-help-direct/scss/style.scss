@@ -1,0 +1,117 @@
+/**
+ * Theme Name:   Tech Help Direct
+ * Theme URI:    https://techhelpdirect.com.au/
+ * Description:  This theme was custom-built on top of Bridge theme for Tech Help Direct.
+ * Author:       Alex Kladov @ Tech Help Direct
+ * Author URI:   https://techhelpdirect.com.au/team/alex-kladov
+ * Template:     bridge
+ * Version:      1.0.0
+ * Tags:         tech-help-direct, responsive-layout
+ * Text Domain:  tech_help_direct
+ */
+
+/*********************************************
+ ********** CUSTOM STYLES FROM HERE **********
+ *********************************************/
+
+/**
+ * :: Mixins
+ **/
+@import 'mixins-media';
+@import 'mixins-font-face';
+@import 'mixins-vendor-prefixes';
+
+
+
+
+
+
+/**
+ * :: WordPress Dashboard Menu
+ **/
+#wpadminbar {
+  z-index: 99999999999;
+}
+
+
+
+
+/**
+ * :: HubSpot Forms
+ **/
+form.hs-form {
+  text-align: left !important;
+  fieldset {
+    max-width: 100% !important;
+  }
+  label, input[type=submit], select {
+    cursor: pointer !important;
+  }
+  .field {
+    margin: 16px 0 !important;
+    input:not([type=checkbox]):not([type=radio]),
+    textarea,
+    select {
+      margin: 0 !important;
+      padding: 10px !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      background: #fff !important;
+      background-image: none !important;
+      -webkit-appearance: none !important;
+      border: 1px solid #cee896 !important;
+      border-radius: 0 !important;
+      outline: none !important;
+      font-size: 15px !important;
+      font-weight: 300 !important;
+      font-family: inherit !important;
+      box-sizing: border-box !important;
+      color: #818181 !important;
+      line-height: 21px !important;
+      min-height: 41px !important;
+    }
+    select:not([multiple]) {
+      height: 40px !important;
+      -webkit-appearance: none !important;
+      -moz-appearance: none !important;
+      appearance: none !important;
+      background-position: right 50% !important;
+      background-repeat: no-repeat !important;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFNDEwNjlGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFNDEwNkFGNzFEMTFFMkJEQ0VDRTM1N0RCMzMyMkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkU0MTA2N0Y3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkU0MTA2OEY3MUQxMUUyQkRDRUNFMzU3REIzMzIyQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PuGsgwQAAAA5SURBVHjaYvz//z8DOYCJgUxAf42MQIzTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=) !important;
+    }
+    & > label {
+        font-weight: 400 !important;
+    }
+    ul {
+      list-style: none !important;
+      &.hs-error-msgs {
+        color: #FF4500 !important;
+      }
+      li {
+        font-size: 14px !important;
+        line-height: 22px !important;
+      }
+    }
+  }
+  .hs-submit {
+    text-align: center !important;
+    input[type=submit] {
+      padding: 10px 30px !important;
+      background: #97ce1e !important;
+      color: #fff !important;
+      border: 1px solid #97ce1e !important;
+      border-radius: 0 !important;
+      text-transform: uppercase !important;
+      font-weight: 700 !important;
+      font-family: inherit !important;
+      font-size: inherit !important;
+      &:hover {
+        background: #fff !important;
+        color: #97ce1e !important;
+      }
+      @include media( '<mobile-landscape' ) {
+        width: 100% !important;
+      }
+    }
+  }
+}
